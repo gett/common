@@ -55,6 +55,7 @@ If you want to use futures you can use the `future` function to create a future:
 	setTimeout(function() {
 		fut.put(42); // results in the previous .get being called and all future .get's will be called synchroniously
 	}, 1000)
+```
 
 To do string formatting you can use `format`:
 
