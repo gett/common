@@ -81,7 +81,7 @@ If you instead of a weak symbol need a strong one use `uuid`:
 	common.uuid(); // returns a strong id, ex: ngDl6IdovME9JKvIxgED0FK1kzURxfZaCq48-0
 ```
 
-Common can also encode integers into base62 (alphanumerical) notation using `encode`:
+Common can also encode integers into alphanumerical notation using `encode`:
 
 ``` js
 	common.encode(1000); // returns G8
