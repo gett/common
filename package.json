@@ -6,5 +6,5 @@
  "contributors": [
    "Mathias Buus Madsen <m@ge.tt>"
  ],
- "main":"./index.js",
+ "main":"./index.js"
 }
