@@ -256,6 +256,19 @@ exports.gensym = function() {
 	};
 }();
 
+exports.join = function() {
+	var result = {};
+	
+	for (var i = 0; i < arguments.length; i++) {
+		var a = arguments[i];
+		
+		for (var j in a) {
+			result[j] = a[j];
+		}
+	}
+	return result;
+};
+
 exports.format = function (str, col) {
 	col = typeof col === 'object' ? col : Array.prototype.slice.call(arguments, 1);
 
