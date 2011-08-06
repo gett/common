@@ -1,6 +1,6 @@
 {
  "name":"common",
- "version":"0.1.3",
+ "version":"0.1.4",
  "description":"A utility package with some useful functional stuff",
  "author": "Ge.tt <hello@ge.tt>",
  "contributors": [

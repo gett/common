@@ -3,7 +3,7 @@ var noop = function() {};
 var Emitter;
 
 if (!module.browser) {
-	Emitter = require("events").EventEmitter; // using " so the resolver doesnt get confused
+	Emitter = require('events').EventEmitter; // node-only
 } else {
 	Emitter = function() {
 		this._events = {};
