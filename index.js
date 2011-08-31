@@ -278,12 +278,8 @@ exports.format = function (str, col) {
 };
 
 exports.log = function(str) {
-	str = ''+str;
-	
-	var format = exports.format.apply(exports, arguments);
-	
 	if (typeof window !== 'undefined' && !window.console) {
 		return;
 	}
-	console.log(format);
+	console.log(str);
 };
