@@ -272,6 +272,12 @@ exports.join = function() {
 	return result;
 };
 
+exports.loop = function(x, fn) {
+  for(var i = 0; i < x; i++) {
+    fn(i);
+  }
+};
+
 exports.format = function (str, col) {
 	col = typeof col === 'object' ? col : Array.prototype.slice.call(arguments, 1);
 
