@@ -142,7 +142,7 @@ exports.step = function(funcs, onerror) {
 			next(null, values);
 		}
 	};
-	next.parallel = function() {
+	next.parallel = function(key) {
 		var index = counter++;
 
 		if (complete) {
@@ -150,7 +150,7 @@ exports.step = function(funcs, onerror) {
 		}
 		return function(err, value) {
 			completed++;
-			values[index] = value;
+			values[key ? key : index] = value;
 			next(err, values);
 		};
 	};
