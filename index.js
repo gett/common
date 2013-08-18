@@ -155,6 +155,13 @@ exports.step = function(funcs, onerror) {
 		};
 	};
 
+  next.skip = function (step) {
+    pointer += step;
+    return function (err, value) {
+      next(err, value);
+    }
+  }
+
 	next();
 };
 
