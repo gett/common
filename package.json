@@ -1,6 +1,6 @@
 {
  "name":"common",
- "version":"0.2.4",
+ "version":"0.2.5",
  "description":"A utility package with some useful functional stuff",
  "author": "Ge.tt <hello@ge.tt>",
  "repository": "git://github.com/gett/common.git",
